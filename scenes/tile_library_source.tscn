@@ -1,0 +1,153 @@
+[gd_scene format=3 uid="uid://3auf1vpoqaj1"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_t3v78"]
+albedo_color = Color(0, 1, 0, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_i3oq3"]
+material = SubResource("StandardMaterial3D_t3v78")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_oegv4"]
+albedo_color = Color(0.67058825, 0.32941177, 0, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_ndc5w"]
+material = SubResource("StandardMaterial3D_oegv4")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ofher"]
+albedo_color = Color(0.58431375, 0.57254905, 0.56078434, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_2pve3"]
+material = SubResource("StandardMaterial3D_ofher")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5gggp"]
+albedo_color = Color(0, 0, 1, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_tl2ne"]
+material = SubResource("StandardMaterial3D_5gggp")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3y8wk"]
+albedo_color = Color(1, 1, 0, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_apcpd"]
+material = SubResource("StandardMaterial3D_3y8wk")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nfr6a"]
+albedo_color = Color(0.7294118, 0.36862746, 0, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_vdusl"]
+material = SubResource("StandardMaterial3D_nfr6a")
+
+[sub_resource type="ORMMaterial3D" id="ORMMaterial3D_ef3el"]
+albedo_color = Color(0.42745098, 0.42745098, 0.4392157, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_8qipd"]
+material = SubResource("ORMMaterial3D_ef3el")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_i3oq3"]
+albedo_color = Color(0.16078432, 0.4392157, 0.16078432, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_8hkek"]
+material = SubResource("StandardMaterial3D_i3oq3")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_26nps"]
+albedo_color = Color(0.8509804, 0.8509804, 0.8627451, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_mo484"]
+material = SubResource("StandardMaterial3D_26nps")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fmr8i"]
+albedo_color = Color(0.40496445, 0.24354663, 0, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_yrxgh"]
+material = SubResource("StandardMaterial3D_fmr8i")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lvxpk"]
+albedo_color = Color(0.7411765, 1, 1, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_hil2v"]
+material = SubResource("StandardMaterial3D_lvxpk")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4v3nr"]
+albedo_color = Color(0.5372549, 0.6901961, 1, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_iu54r"]
+material = SubResource("StandardMaterial3D_4v3nr")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3anxl"]
+albedo_color = Color(0.8156863, 0.8392157, 0.7647059, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_llakt"]
+material = SubResource("StandardMaterial3D_3anxl")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nnbl4"]
+albedo_color = Color(0, 0.56078434, 0.13725491, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_k6s3q"]
+material = SubResource("StandardMaterial3D_nnbl4")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_f2hce"]
+albedo_color = Color(1, 0, 0, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_g08pw"]
+material = SubResource("StandardMaterial3D_f2hce")
+
+[node name="TileLibrarySource" type="Node3D" unique_id=1732287887]
+
+[node name="Grass" type="MeshInstance3D" parent="." unique_id=1143420147]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.6345892, 3.6996593)
+mesh = SubResource("BoxMesh_i3oq3")
+
+[node name="Dirt" type="MeshInstance3D" parent="." unique_id=1978718348]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.6356454, 3.6597137)
+mesh = SubResource("BoxMesh_ndc5w")
+
+[node name="Stone" type="MeshInstance3D" parent="." unique_id=1857008870]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.6434957, 3.6824985)
+mesh = SubResource("BoxMesh_2pve3")
+
+[node name="Water" type="MeshInstance3D" parent="." unique_id=1146326447]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.6494818, 2.5076857)
+mesh = SubResource("BoxMesh_tl2ne")
+
+[node name="Sand" type="MeshInstance3D" parent="." unique_id=765793001]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.066278, 1.3128362)
+mesh = SubResource("BoxMesh_apcpd")
+
+[node name="Tree" type="MeshInstance3D" parent="." unique_id=1837531647]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.7038493, 2.3382277)
+mesh = SubResource("BoxMesh_vdusl")
+
+[node name="Rock" type="MeshInstance3D" parent="." unique_id=1761195113]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.8102767, -0.00038981438)
+mesh = SubResource("BoxMesh_8qipd")
+
+[node name="Leaves" type="MeshInstance3D" parent="." unique_id=1192498022]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.6573095, 2.2624931)
+mesh = SubResource("BoxMesh_8hkek")
+
+[node name="Gravel" type="MeshInstance3D" parent="." unique_id=521775513]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.1036713, -1.0209816)
+mesh = SubResource("BoxMesh_mo484")
+
+[node name="Mud" type="MeshInstance3D" parent="." unique_id=1425778569]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.3671117, 4.885182)
+mesh = SubResource("BoxMesh_yrxgh")
+
+[node name="Snow" type="MeshInstance3D" parent="." unique_id=880070185]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.4485304, 5.259075)
+mesh = SubResource("BoxMesh_hil2v")
+
+[node name="Ice" type="MeshInstance3D" parent="." unique_id=1995197310]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.335691, 6.480448)
+mesh = SubResource("BoxMesh_iu54r")
+
+[node name="Clay" type="MeshInstance3D" parent="." unique_id=1016523164]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.6640658, 0)
+mesh = SubResource("BoxMesh_llakt")
+
+[node name="Cactus" type="MeshInstance3D" parent="." unique_id=1502186580]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.0919733, 1.2734493)
+mesh = SubResource("BoxMesh_k6s3q")
+
+[node name="Flower" type="MeshInstance3D" parent="." unique_id=1601066449]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.6426694, 3.724339)
+mesh = SubResource("BoxMesh_g08pw")

@@ -1,0 +1,63 @@
+[gd_scene format=3 uid="uid://bfthvgye7rl36"]
+
+[ext_resource type="Script" uid="uid://duekmqrw0jrir" path="res://scripts/main.gd" id="1_jyhfs"]
+[ext_resource type="Script" uid="uid://bbfwsu457skdt" path="res://scripts/world.gd" id="2_tbgi4"]
+[ext_resource type="MeshLibrary" uid="uid://dr3bajmm13awy" path="res://resources/world_tiles.tres" id="3_tbgi4"]
+[ext_resource type="Script" uid="uid://da4hwg6qlgn6c" path="res://scripts/player.gd" id="3_tefeu"]
+[ext_resource type="Script" uid="uid://blr2m8ketxot0" path="res://scripts/database_manager.gd" id="4_o6xl0"]
+
+[node name="Main" type="Node3D" unique_id=1087075610]
+script = ExtResource("1_jyhfs")
+
+[node name="World" type="Node3D" parent="." unique_id=1763871020]
+script = ExtResource("2_tbgi4")
+
+[node name="GridMap" type="GridMap" parent="World" unique_id=845060256]
+mesh_library = ExtResource("3_tbgi4")
+cell_size = Vector3(1, 1, 1)
+cell_center_x = false
+cell_center_y = false
+cell_center_z = false
+metadata/_editor_floor_ = Vector3(0, 1, 0)
+
+[node name="Player" type="Node3D" parent="." unique_id=75848874]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 8, 8)
+script = ExtResource("3_tefeu")
+
+[node name="Camera3D" type="Camera3D" parent="Player" unique_id=1609920975]
+current = true
+fov = 90.0
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=630400972]
+transform = Transform3D(0.81915206, -0.4055798, 0.40557975, 0, 0.70710677, 0.7071068, -0.57357645, -0.579228, 0.5792279, 10, 15.023525, 10)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=390154685]
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer" unique_id=554375007]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/MarginContainer" unique_id=1076711776]
+layout_mode = 2
+
+[node name="DebugLabel" type="Label" parent="CanvasLayer/MarginContainer/VBoxContainer" unique_id=171173015]
+layout_mode = 2
+text = "DebugLabel"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/MarginContainer/VBoxContainer" unique_id=1163989360]
+layout_mode = 2
+
+[node name="SaveButton" type="Button" parent="CanvasLayer/MarginContainer/VBoxContainer/HBoxContainer" unique_id=2144734413]
+layout_mode = 2
+text = "SaveButton"
+
+[node name="ReloadButton" type="Button" parent="CanvasLayer/MarginContainer/VBoxContainer/HBoxContainer" unique_id=1544510201]
+layout_mode = 2
+text = "ReloadButton"
+
+[node name="NewWorldButton" type="Button" parent="CanvasLayer/MarginContainer/VBoxContainer/HBoxContainer" unique_id=31408907]
+layout_mode = 2
+text = "NewWorldButton"
+
+[node name="DatabaseManager" type="Node" parent="." unique_id=54190361]
+script = ExtResource("4_o6xl0")
